@@ -21,6 +21,8 @@ for (code in KEY_CODES) {
   KEY_STATUS[KEY_CODES[code]] = false;
 }
 
+#key for movement
+
 $(window).keydown(function (e) {
   KEY_STATUS.keyDown = true;
   if (KEY_CODES[e.keyCode]) {
